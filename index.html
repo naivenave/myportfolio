@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Portfolio | Your Name</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; } /* Smooth scrolling enable karne ke liye */
+        body { background: radial-gradient(circle at top right, #1e1e2f, #0f0f1a); color: white; }
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #ff4081, #e91e63, #7c4dff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <nav class="fixed w-full z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center glass px-6 py-3">
+            <div class="text-2xl font-bold gradient-text">Portfolio.</div>
+            <div class="space-x-8 hidden md:flex">
+                <a href="#about" class="hover:text-pink-400 transition">About</a>
+                <a href="#projects" class="hover:text-pink-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-pink-400 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="h-screen flex flex-col justify-center items-center text-center px-4">
+        <div class="glass p-10 max-w-3xl">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4">Hi, I'm <span class="gradient-text">Naman Verma</span></h1>
+            <p class="text-xl text-gray-400 mb-8">Software Engineer | Making Cool Stuff on GitHub</p>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <a href="#projects" class="bg-pink-600 hover:bg-pink-700 px-8 py-3 rounded-full font-bold transition">View My Projects</a>
+                <a href="resume.pdf" download class="border border-pink-600 px-8 py-3 rounded-full font-bold hover:bg-pink-600 transition">
+                    <i class="fas fa-download mr-2"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6 max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold mb-12 text-center underline decoration-pink-500">My Creations</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="glass p-6 hover:-translate-y-2 transition duration-300">
+                <div class="h-40 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg mb-4 flex items-center justify-center">
+                    <i class="fas fa-heart text-5xl text-white"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Valentine Surprise App</h3>
+                <p class="text-gray-400 mb-4">A mischievous web app with heart animations and secret WhatsApp alerts.</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-sm font-mono text-pink-400">HTML | CSS | JS</span>
+                    <a href="https://github.com/YOUR_USERNAME/valentine-repo" target="_blank" class="text-white hover:text-pink-400">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="glass p-6 hover:-translate-y-2 transition duration-300">
+                <div class="h-40 bg-gradient-to-r from-blue-500 to-teal-500 rounded-lg mb-4 flex items-center justify-center">
+                    <i class="fas fa-code text-5xl text-white"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Portfolio Website</h3>
+                <p class="text-gray-400 mb-4">Responsive glassmorphism portfolio with automated GitHub Actions deployment.</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-sm font-mono text-pink-400">Tailwind | Actions</span>
+                    <a href="#" class="text-white hover:text-pink-400"><i class="fab fa-github text-2xl"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-6 text-center">
+        <div class="glass max-w-2xl mx-auto p-10">
+            <h2 class="text-4xl font-bold mb-6">Get In Touch</h2>
+            <p class="text-gray-400 mb-8">Want to work together or just say hi?</p>
+            
+            <a href="mailto:nverma@ah.iitr.ac.in" class="text-2xl font-bold hover:text-pink-500 transition block mb-8">
+                nverma@ah.iitr.ac.in
+            </a>
+
+            <div class="flex justify-center space-x-8">
+                <a href="https://linkedin.com/in/YOUR_PROFILE" target="_blank" class="text-4xl hover:text-blue-500 transition"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/YOUR_USERNAME" target="_blank" class="text-4xl hover:text-gray-400 transition"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-500 text-sm">
+        Built with 🔥 by Your Name &copy; 2026
+    </footer>
+
+</body>
+</html>
